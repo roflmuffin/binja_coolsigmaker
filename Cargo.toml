@@ -2,7 +2,7 @@
 name = "binja_coolsigmaker"
 version = "0.1.6"
 authors = ["unknowntrojan"]
-edition = "2024"
+edition = "2024" 
 
 [lib]
 crate-type = ["cdylib"]
