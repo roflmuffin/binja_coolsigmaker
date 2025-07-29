@@ -968,7 +968,7 @@ impl Command for SigFinderCommand {
     }
 }
 
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "C" fn CorePluginInit() -> bool {
     let logger = binaryninja::logger::Logger::new("CoolSigMaker");
     logger.with_level(log::LevelFilter::Info).init();
